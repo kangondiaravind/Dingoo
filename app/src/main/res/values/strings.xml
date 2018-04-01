@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dingoo</string>
+    <string name="logout_button">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Welcome to Friends Fragment</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "420107427940",
+    "firebase_url": "https://dingoo-c5bca.firebaseio.com",
+    "project_id": "dingoo-c5bca",
+    "storage_bucket": "dingoo-c5bca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420107427940:android:46ac197c0eb6acb1",
+        "android_client_info": {
+          "package_name": "shop.kangondiaravind.com.dingoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420107427940-4rlb6no9bndejl00vld11dhem5b1k0sk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shop.kangondiaravind.com.dingoo",
+            "certificate_hash": "6bef9c0c4006b27314f3a96fc938005be14c59f9"
+          }
+        },
+        {
+          "client_id": "420107427940-40r62emma8hvcmlus2au5aemlq0jo1vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Z4NCxEHQzbTH-hqWNhraYPG-I8sJ1uA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420107427940-40r62emma8hvcmlus2au5aemlq0jo1vb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
