@@ -2,7 +2,9 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Account Settings" />
+    <item android:title="Account Settings"
+        android:id="@+id/account_settings"
+        />
     <item android:title="All Users" />
     <item android:title="@string/logout_button"
         android:id="@+id/main_logout"/>

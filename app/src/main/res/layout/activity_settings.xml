@@ -1,67 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context="shop.kangondiaravind.com.dingoo.SettingsActivity">
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorPrimaryDark"
+tools:context="shop.kangondiaravind.com.dingoo.SettingsActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/ic_launcher_background" />
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/circleImageView"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:src="@drawable/ic_launcher_background" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/circleImageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        android:text="DISPLAY NAME"
-        android:textColor="#FFFFFF"
-        android:textSize="19dp"
-        android:textStyle="bold" />
+<TextView
+    android:id="@+id/tv_dp_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/circleImageView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="52dp"
+    android:text="DISPLAY NAME"
+    android:textColor="#FFFFFF"
+    android:textSize="19dp"
+    android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:text="Hi there am using Dingoo chat"
-        android:textColor="#FFFFFF" />
+<TextView
+    android:id="@+id/tv_status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_dp_name"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="21dp"
+    android:text="Hi there am using Dingoo chat"
+    android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
-        android:background="#FFFFFF"
-        android:paddingEnd="20dp"
-        android:paddingStart="20dp"
-        android:text="Change Image"
-        android:textColor="@color/colorPrimaryDark" />
+<Button
+    android:id="@+id/btn_change_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_status"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="55dp"
+    android:background="#FFFFFF"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:text="Change Image"
+    android:textColor="@color/colorPrimaryDark"
+    android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/colorAccent"
-        android:paddingEnd="20dp"
-        android:paddingStart="20dp"
-        android:text="Change status"
-        android:textColor="#FFFFFF" />
+<Button
+    android:id="@+id/btn_change_status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/btn_change_img"
+    android:layout_below="@+id/btn_change_img"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="@color/colorAccent"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:text="Change status"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold" />
 
 
 </RelativeLayout>

@@ -16,7 +16,7 @@ class SectionPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        switch(position){
+        switch (position) {
             case 0:
                 RequestFragment requestFragment = new RequestFragment();
                 return requestFragment;
@@ -36,9 +36,9 @@ class SectionPagerAdapter extends FragmentPagerAdapter {
         return 3;
     }
 
-    public CharSequence getPageTitle(int posistion){
+    public CharSequence getPageTitle(int posistion) {
 
-        switch (posistion){
+        switch (posistion) {
             case 0:
                 return "REQUESTS";
             case 1:
