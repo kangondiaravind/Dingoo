@@ -79,24 +79,28 @@ public class RegisterActivity extends AppCompatActivity {
                     FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                     String uid = currentUser.getUid();
 
-                    //Database reference
+                    //Write to your database (Storing user details)
                     database = FirebaseDatabase.getInstance();
+                    //rootDirectory , usersDirectory(child) , userId(see firebase console)
                     myRef = database.getReference().child("Users").child(uid);
 
-                    //Creating HashMap to store key and values of the user
+                    //Creating HashMap to store data of the user
                     HashMap<String, String> users = new HashMap<>();
                     users.put("name", displayName);
-                    users.put("ustatus", "Hi there I'm using Dingoo chat");
+                    users.put("status", "Hi there I'm using Dingoo chat");
+                    users.put("image", "default");
                     users.put("thumb_image", "default");
                     myRef.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
-
-                            regProgress.dismiss();
+                            if (task.isSuccessful()) {
+                                regProgress.dismiss();
+                            }
                             Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
                             finish();
+
                         }
                     });
                 } else {
